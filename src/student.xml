@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean id="student" 	class="com.gslab.beansdemo.model.Student">
+    	<property name="id" value="101"></property>
+    	<property name="name" value="kartik karekar"></property>
+    </bean>
+   <bean id="mandar" 	class="com.gslab.beansdemo.model.Student">
+    	<property name="id" value="102"></property>
+    	<property name="name" value="Mandar Dharurkar"></property>
+    </bean>
+   <bean id="shivaji" 	class="com.gslab.beansdemo.model.Student">
+    	<property name="id" value="103"></property>
+    	<property name="name" value="Shivaji Mutkule"></property>
+    </bean> 
+    <alias name="mandar" alias="mandar_clone"/>   
+</beans>    
+    
